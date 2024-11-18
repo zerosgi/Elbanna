@@ -1,210 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional web development and blockchain solutions by Alex Elbanna. Serving Tampa, Florida; North Carolina; Los Angeles; and New York City with responsive designs and blockchain expertise.">
-    <meta name="keywords" content="Web Development Tampa, Blockchain Solutions Florida, Web Design North Carolina, Website Development Los Angeles, Blockchain Development New York City, Responsive Websites Tampa, SEO North Carolina, Website Design Los Angeles, Blockchain Expertise NYC">
+    <meta name="description" content="Hire Alex Elbanna for professional web development, blockchain solutions, and SEO services. Available for $500/day. Serving Tampa, North Carolina, Los Angeles, and New York City.">
+    <meta name="keywords" content="web development, blockchain solutions, SEO, Tampa web design, North Carolina SEO, Los Angeles web design, blockchain expert, Elbanna.org">
     <meta name="author" content="Alex Elbanna">
+    <meta name="robots" content="index, follow">
     <meta name="geo.region" content="US-FL">
-    <meta name="geo.placename" content="Tampa, Florida">
-    <meta name="geo.position" content="27.950575;-82.457178">
-    <meta name="ICBM" content="27.950575, -82.457178">
-    <title>Elbanna.org - Web Development & Blockchain Solutions</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid #fff;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        header img {
-            max-width: 120px;
-            height: auto;
-            display: block;
-            margin: 0 auto 10px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        .content {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #fff;
-            padding-bottom: 5px;
-        }
-
-        .section p {
-            margin-bottom: 10px;
-        }
-
-        .packages {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .package {
-            border: 2px solid #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .package h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .package p {
-            margin-bottom: 15px;
-        }
-
-        .package a {
-            display: inline-block;
-            background-color: #fff;
-            color: #000;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .package a:hover {
-            background-color: #ccc;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid #fff;
-        }
-
-        footer p {
-            margin-bottom: 5px;
-        }
-
-        footer a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .mail-btn {
-            background-color: #fff;
-            color: #000;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .mail-btn:hover {
-            background-color: #ccc;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            .section h2 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+    <meta name="geo.placename" content="Tampa">
+    <meta name="geo.position" content="27.994402;-82.594016">
+    <meta name="ICBM" content="27.994402, -82.594016">
+    <meta property="og:title" content="Alex Elbanna - Web Development & Blockchain Solutions">
+    <meta property="og:description" content="Get high-quality web development and blockchain solutions from Alex Elbanna, available for just $500/day. Serving local areas like Tampa, North Carolina, Los Angeles, and New York City.">
+    <meta property="og:url" content="https://elbanna.org">
+    <meta name="twitter:title" content="Alex Elbanna - Web Development & Blockchain Solutions">
+    <meta name="twitter:description" content="Hire Alex Elbanna for web development and blockchain solutions at an affordable price of $500 per day. Available for local projects in Tampa, North Carolina, Los Angeles, and NYC.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://elbanna.org/images/logo.png">
+    <title>Alex Elbanna - Web Development & Blockchain Solutions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <img src="directory_explorer-5.png" alt="Elbanna Logo">
-        <h1>Welcome to Elbanna.org</h1>
-        <p>Professional Web Development & Blockchain Solutions by Alex Elbanna</p>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="content">
-        <div class="section">
-            <h2>About Us</h2>
-            <p>At Elbanna.org, we specialize in delivering high-quality websites and blockchain solutions tailored to your needs. We serve businesses and individuals in Tampa, Florida; North Carolina; Los Angeles; and New York City. Whether you're a local business or a nationwide corporation, we have the tools and expertise to help you succeed.</p>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Professional Web Development & Blockchain Solutions</h1>
+            <p>Hire Alex Elbanna for just $500/day. Serving Tampa, North Carolina, Los Angeles, and New York City. Your go-to expert for web design, SEO, and blockchain projects.</p>
+            <a href="#contact" class="cta-button">Contact Me Today</a>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Our Packages</h2>
-            <div class="packages">
-                <div class="package">
-                    <h3>Basic Website</h3>
-                    <p>Get a fully responsive one-page website in just 4 hours.</p>
-                    <p><strong>Price: $500</strong></p>
-                    <a href="https://nowpayments.io/donation/Geckoman">Order Now</a>
-                </div>
-                <div class="package">
-                    <h3>Premium Website</h3>
-                    <p>Multi-page website with branding, SEO, and mobile optimization.</p>
-                    <p><strong>Price: $2,500</strong></p>
-                    <a href="https://nowpayments.io/donation/Geckoman">Order Now</a>
-                </div>
-                <div class="package">
-                    <h3>Blockchain Development</h3>
-                    <p>Custom blockchain solutions tailored to your business needs.</p>
-                    <p><strong>Price: $25,000 - $250,000</strong></p>
-                    <a href="https://nowpayments.io/donation/Geckoman">Contact Us</a>
-                </div>
-            </div>
-        </div>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Whether you need a professional website, blockchain solution, or SEO optimization, I offer top-notch services tailored to your needs. Available for daily hires at an affordable rate of $500/day.</p>
+        <ul>
+            <li><strong>Web Design:</strong> Modern, responsive websites designed to your specifications.</li>
+            <li><strong>Blockchain Solutions:</strong> Custom blockchain development and consultation services.</li>
+            <li><strong>SEO & Marketing:</strong> Improve your online presence with local SEO optimization and marketing strategies.</li>
+        </ul>
+    </section>
 
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:info@elbanna.org">info@elbanna.org</a></p>
-            <a href="mailto:info@elbanna.org?subject=Payment%20ID:%20YourPaymentIDHere&body=I%20would%20like%20to%20have%20a%20(choose%20one):%0A-%20Website%20designed%20and%20developed%0A-%20Blockchain%20built.%0A%0APlease%20describe%20your%20project%20here:%0A%0AI%20will%20email%20you%20back%20with%20the%20best%20solution.%0AOnce%20we%20agree,%20we%20will%20move%20forward.%0AThank%20you%20for%20your%20order!" 
-               class="mail-btn">Send Mail</a>
+    <section id="packages">
+        <h2>Our Packages</h2>
+        <p>Choose the package that works best for you. All services are available on a daily basis for $500.</p>
+        <div class="package">
+            <h3>Web Design Package</h3>
+            <p>Get a fully responsive, custom-designed website with SEO optimization.</p>
         </div>
-    </div>
+        <div class="package">
+            <h3>Blockchain Solutions Package</h3>
+            <p>Receive expert blockchain development, including consultation and implementation.</p>
+        </div>
+        <div class="package">
+            <h3>SEO & Marketing Package</h3>
+            <p>Boost your business visibility with tailored SEO services for local and national reach.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Ready to get started on your project? Reach out to me and let's discuss your needs.</p>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>© 2024 Alex Elbanna - All Rights Reserved</p>
-        <p><a href="https://elbanna.org">Elbanna.org</a></p>
+        <p>&copy; 2024 <a href="https://elbanna.org" target="_blank">Elbanna.org</a>. All rights reserved.</p>
+        <p>Web design by Elbanna.org</p>
+        <p>Mission: To achieve the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel.</p>
+        <p>@ Be Your Own Hero 2024 wallets are available here <a href="https://raptoreum.com/downloads/">Raptoreum Downloads</a></p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
