@@ -5,170 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elbanna.org - Global Rescue Team</title>
     <style>
-        /* Base Styles */
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             color: white;
-            background-color: black;
-        }
-
-        /* Header */
-        header {
-            background-color: black;
-            text-align: center;
-            padding: 20px 10px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header img {
-            max-width: 150px;
-            height: auto;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100vh;
-            background: url('https://github.com/zerosgi/Elbanna/blob/main/file-Tmdjz9GN8DseN7HoWlAo93mn.webp') no-repeat center center / cover;
+            background: url('/mnt/data/A_subtle,_dramatic_background_featuring_the_shadow.png') no-repeat center center fixed;
+            background-size: cover;
             position: relative;
         }
 
-        .hero::before {
+        /* Overlay */
+        body::before {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 0;
         }
 
-        .hero h1 {
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .logo {
             font-size: 3rem;
-            color: royalblue;
-            z-index: 1;
-        }
-
-        .hero h2 {
-            font-size: 1.5rem;
-            color: gold;
-            margin-top: 10px;
-            z-index: 1;
-        }
-
-        .hero a {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: royalblue;
-            color: white;
             font-weight: bold;
+            color: royalblue;
+            text-shadow: 2px 2px 5px gold;
+        }
+
+        .description {
             font-size: 1.2rem;
-            text-decoration: none;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background: #333;
             border: 2px solid gold;
             border-radius: 5px;
-            z-index: 1;
+            text-decoration: none;
+            text-transform: uppercase;
         }
 
-        .hero a:hover {
-            background-color: gold;
+        .button:hover {
+            background: gold;
             color: black;
         }
 
-        /* Mission Section */
-        .mission {
-            padding: 50px 20px;
-            text-align: center;
-            background-color: #121212;
-        }
-
-        .mission h3 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: royalblue;
-        }
-
-        .mission p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        /* Footer */
         footer {
-            background-color: #111;
-            text-align: center;
-            padding: 20px;
-            color: white;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        footer a {
-            color: royalblue;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero h2 {
-                font-size: 1rem;
-            }
-
-            .hero a {
-                font-size: 1rem;
-            }
-
-            .mission h3 {
-                font-size: 1.5rem;
-            }
-
-            .mission p {
-                font-size: 1rem;
-            }
+            margin-top: 40px;
+            padding: 10px 0;
+            background-color: #000;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://www.elbanna.org/images/logo.png" alt="Elbanna.org Logo">
-    </header>
-
-    <section class="hero">
-        <h1>Elbanna.org</h1>
-        <h2>A Global Rescue Team</h2>
-        <a href="https://nowpayments.io/payment/?iid=5833507021">Donate Now</a>
-    </section>
-
-    <section class="mission">
-        <h3>Our Mission</h3>
-        <p>
-            At Elbanna.org, we unite the world's best-qualified people—experts in their field and masters of their craft.  
-            Together, we tackle global challenges with precision, determination, and unmatched expertise.  
-            Join us in making a real difference where it matters most.
-        </p>
-    </section>
-
+    <div class="content">
+        <header>
+            <div class="logo">Elbanna.org</div>
+            <p>Global Rescue Team - Masters of Their Craft</p>
+        </header>
+        <div class="description">
+            <p>Join our mission to unite the world's most skilled experts to tackle the toughest challenges. Together, we create real impact where it's needed most.</p>
+            <p>Donate to support our global rescue initiatives.</p>
+        </div>
+        <a href="https://nowpayments.io/payment/?iid=5833507021" class="button">Donate Now</a>
+    </div>
     <footer>
-        <p>&copy; 2024 Elbanna.org. All rights reserved.  
-            <a href="mailto:contact@elbanna.org">Contact Us</a>
-        </p>
+        <p>&copy; 2024 Elbanna.org - All Rights Reserved</p>
     </footer>
 </body>
 </html>
