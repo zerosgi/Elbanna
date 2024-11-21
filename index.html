@@ -3,33 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Alex Elbanna - Web Developer in Tampa, Florida, offering web development services in Tampa, NYC, LA, Colorado, and Boston.">
-    <meta name="keywords" content="Alex Elbanna, Alexander Elbanna, Elbanna, Web Developer, Tampa, Florida, NYC, LA, Colorado, Boston, Non-profit organization, Technology, Education, Digital skills, Empowerment">
-    <meta name="author" content="Alex Elbanna">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Elbanna.org - Non Profit Organization">
-    <meta property="og:description" content="Alex Elbanna's non-profit organization offering web development and technology empowerment across Tampa, NYC, LA, Colorado, and Boston.">
-    <meta property="og:image" content="https://www.elbanna.org/images/logo.png">
-    <meta property="og:url" content="https://www.elbanna.org">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:title" content="Elbanna.org - Non Profit Organization">
-    <meta name="twitter:description" content="Alex Elbanna's non-profit organization offering web development and technology empowerment across Tampa, NYC, LA, Colorado, and Boston.">
-    <meta name="twitter:image" content="https://www.elbanna.org/images/logo.png">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Google Font (Lobster for reggae vibe) -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
     <title>Elbanna.org - Non Profit Organization</title>
-
     <style>
         body {
-            background-color: black;
+            background: url('A_majestic_roaring_lion_in_a_dramatic_pose,_set_in.png') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.7); /* Adds a dark overlay */
             color: white;
             font-family: 'Lobster', cursive; /* Reggae style font */
             margin: 0;
@@ -38,7 +18,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Full viewport height */
+            height: 100vh;
             text-align: center;
         }
 
@@ -47,7 +27,7 @@
         }
 
         header h1 {
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: bold;
             color: #ff6347; /* Tomato red */
             margin: 0;
@@ -55,27 +35,31 @@
         }
 
         header h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: bold;
             color: #ffeb3b; /* Bright yellow */
             margin-top: 0;
         }
 
         .donation-button {
+            display: inline-block;
             margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.5rem;
+            padding: 10px 20px;
+            font-size: 1rem;
             font-weight: bold;
             color: white;
-            background-color: #2196f3; /* Blue */
+            background-color: #ff9800; /* Orange */
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
             text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
         }
 
         .donation-button:hover {
-            background-color: #1e88e5; /* Darker blue */
+            background-color: #e57c00; /* Darker orange */
+            transform: scale(1.05);
         }
 
         footer {
@@ -87,17 +71,6 @@
             width: 100%;
             bottom: 0;
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 3rem;
-            }
-
-            header h2 {
-                font-size: 1.8rem;
-            }
-        }
     </style>
 </head>
 <body>
@@ -107,7 +80,7 @@
     </header>
 
     <!-- Donation Button -->
-    <a href="https://nowpayments.io/donation/Elbanna%20International%20National%20Crisis%20response%20team" class="donation-button">National and International Crisis Donations</a>
+    <a href="https://nowpayments.io/donation/Elbanna%20International%20National%20Crisis%20response%20team" class="donation-button">Donate to Crisis Relief</a>
 
     <footer>
         <p>&copy; 2024 Elbanna.org | Web design by Elbanna.org</p>
