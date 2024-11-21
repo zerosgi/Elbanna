@@ -9,16 +9,21 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('file-rybggqB58k2iNqkZkBl4rd57.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: black;
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
         }
 
+        header {
+            padding: 20px;
+            background-color: #2e2e2e;
+        }
+
         header h1 {
             font-size: 3rem;
-            margin: 20px 0;
+            margin: 0;
+            color: #00b5e2; /* GoPro-like blue */
         }
 
         .video-container {
@@ -37,7 +42,7 @@
         .donation-container {
             margin: 40px auto;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
             width: 90%;
             max-width: 600px;
@@ -45,6 +50,7 @@
 
         .donation-container h2 {
             margin-bottom: 20px;
+            color: #00b5e2;
         }
 
         .package {
@@ -53,7 +59,7 @@
 
         .package button {
             padding: 15px 30px;
-            background-color: gold;
+            background-color: #00b5e2; /* GoPro-like blue */
             color: black;
             font-size: 1rem;
             font-weight: bold;
@@ -65,18 +71,27 @@
         }
 
         .package button:hover {
-            background-color: white;
-            color: gold;
+            background-color: #f2f2f2;
+            color: #00b5e2;
         }
 
         .package p {
             margin-top: 10px;
             font-size: 1.1rem;
+            color: #e0e0e0;
         }
 
         footer {
             margin-top: 50px;
+            padding: 20px;
+            background-color: #2e2e2e;
             color: lightgray;
+        }
+
+        footer a {
+            color: #00b5e2;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -123,7 +138,7 @@
     </div>
 
     <footer>
-        &copy; 2024 Elbanna.org - Masters of Their Craft
+        <p>&copy; 2024 Elbanna.org - Masters of Their Craft. <a href="https://www.elbanna.org">Contact Us</a></p>
     </footer>
 </body>
 </html>
