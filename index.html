@@ -18,19 +18,8 @@
             color: #333;
         }
 
-        .donate-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #00BFFF;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
+        .donate-widget {
             margin-top: 20px;
-        }
-
-        .donate-button:hover {
-            background-color: #008C99;
         }
 
         footer {
@@ -45,8 +34,13 @@
     <h1>Welcome to Elbanna.org</h1>
     <p>Your support helps us continue providing web development and blockchain solutions.</p>
 
-    <!-- Donation Button -->
-    <a href="https://nowpayments.io/donation/ICRT" class="donate-button" target="_blank">Donate Now</a>
+    <!-- Donation Widget with Dogecoin as Default -->
+    <div class="donate-widget">
+        <iframe src="https://nowpayments.io/embeds/donation-widget?api_key=QA5Z1YY-SV2MF3Y-PHKEZM3-BC04V6F&default_currency=dogecoin" 
+                width="348" height="623" frameborder="0" scrolling="no" style="overflow-y: hidden;">
+            Can't load widget
+        </iframe>
+    </div>
 
     <footer>
         <p>&copy; 2024 Elbanna.org | All Rights Reserved</p>
