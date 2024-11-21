@@ -1,256 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elbanna.org Investor Packages</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elbanna.org - Global Rescue Team</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, h4, p {
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #000;
-      font-size: 2.5em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #00B5E2; /* Hawaiian wave color */
-      font-family: 'Pacifico', sans-serif;
-    }
+        /* Header (Elbanna.org logo) */
+        header {
+            background: linear-gradient(90deg, #000, #ff7e5f, #feb47b);
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #fff;
+            font-family: 'Pacifico', cursive; /* Hawaiian Wave font style */
+        }
 
-    /* Hawaiian wave surfer style for logo */
-    .logo {
-      font-size: 3em;
-      font-weight: bold;
-      color: #00B5E2;
-      text-transform: uppercase;
-      font-family: 'Pacifico', sans-serif;
-      letter-spacing: 4px;
-      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4), 0 0 25px #00B5E2, 0 0 5px #00B5E2;
-      display: inline-block;
-    }
+        /* Donation Section */
+        .donation-section {
+            padding: 50px 20px;
+            background-color: #222;
+            text-align: center;
+        }
+        .donation-section h2 {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-bottom: 20px;
+        }
+        .donation-section p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        .donation-btn {
+            background-color: #feb47b;
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .donation-btn:hover {
+            background-color: #ff7e5f;
+        }
 
-    /* Button style */
-    .cta-btn {
-      background-color: #00B5E2;
-      color: white;
-      font-size: 18px;
-      padding: 12px 30px;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      margin-top: 30px;
-    }
+        /* Investor Packages */
+        .investor-package {
+            padding: 50px 20px;
+            background-color: #333;
+            text-align: center;
+        }
+        .investor-package h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #feb47b;
+        }
+        .investor-package p {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .investor-btn {
+            background-color: #ff7e5f;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .investor-btn:hover {
+            background-color: #feb47b;
+        }
 
-    .cta-btn:hover {
-      background-color: gold;
-    }
+        /* YouTube Video Section */
+        .video-section {
+            margin: 50px 0;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
 
-    .video-container {
-      text-align: center;
-      margin: 40px 0;
-    }
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #feb47b;
+            text-decoration: none;
+        }
 
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-    }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .donation-section h2 {
+                font-size: 1.6rem;
+            }
+            .donation-section p {
+                font-size: 1rem;
+            }
+            .investor-package h3 {
+                font-size: 1.5rem;
+            }
+            .investor-package p {
+                font-size: 1rem;
+            }
+        }
 
-    footer {
-      background-color: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-
-    .donation-section {
-      background-color: #000;
-      padding: 40px 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .donation-btn {
-      background-color: #00B5E2;
-      color: white;
-      font-size: 18px;
-      padding: 12px 30px;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      margin: 10px;
-    }
-
-    .donation-btn:hover {
-      background-color: gold;
-    }
-
-    .donation-info {
-      font-size: 1.2em;
-      margin-top: 20px;
-      color: #fff;
-    }
-
-    .investor-section {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: #000;
-      margin-top: 40px;
-    }
-
-    .investor-package {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      margin: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 250px;
-      text-align: center;
-    }
-
-    .investor-package h3 {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-    }
-
-    .investor-package p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-
-    .investor-btn {
-      background-color: #00B5E2;
-      color: white;
-      font-size: 18px;
-      padding: 12px 30px;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .investor-btn:hover {
-      background-color: gold;
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      header {
-        font-size: 1.8em;
-      }
-
-      iframe {
-        height: 300px;
-      }
-
-      .investor-package {
-        width: 100%;
-      }
-
-      .cta-btn {
-        font-size: 16px;
-        padding: 10px 25px;
-      }
-
-      .donation-btn {
-        font-size: 16px;
-        padding: 10px 25px;
-      }
-
-      .investor-package {
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .donation-btn, .investor-btn {
+                width: 100%;
+                padding: 12px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">Elbanna.org</div>
-  </header>
+<header>
+    <h1>Elbanna.org</h1>
+</header>
 
-  <div class="section">
-    <h2>Explore Our Official SEC Filing</h2>
-    <p>For full transparency, you can view our official SEC filing. Click the button below to access it directly.</p>
-    <a href="https://www.sec.gov/Archives/edgar/data/1827189/000182718920000001/xslFormDX01/primary_doc.xml" class="cta-btn" target="_blank">View SEC Filing</a>
-  </div>
+<div class="donation-section">
+    <h2>Support Our Global Rescue Mission</h2>
+    <p>Your generous contributions fuel our projects aimed at making a real difference in communities around the world. With every donation, you help push forward critical research, humanitarian efforts, and more.</p>
+    <a href="https://nowpayments.io/payment/?iid=4684194348" class="donation-btn" target="_blank">Throw Your Coins in the Wishing Well</a>
+</div>
 
-  <div class="video-container">
-    <h3>Watch Our Introduction Video</h3>
-    <iframe src="https://www.youtube.com/embed/C8dmpfUmN9c?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+<div class="video-section">
+    <h2>Our Latest Project Video</h2>
+    <iframe src="https://www.youtube.com/embed/C8dmpfUmN9c?autoplay=1&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
-  <div class="video-container">
-    <h3>Additional Project Insight</h3>
-    <iframe src="https://www.youtube.com/embed/hXI2cqqD6q0?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+<div class="video-section">
+    <h2>Another Important Video</h2>
+    <iframe src="https://www.youtube.com/embed/hXI2cqqD6q0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
-  <div class="donation-section">
-    <h2>Support Us Through Donations</h2>
-    <p>Throw your coins into the wishing well and help us grow our mission. Your contributions enable us to fund cutting-edge research, develop groundbreaking technologies, and further our projects aimed at social and technological progress. Here's a glimpse of the amazing work you're supporting:</p>
-    
-    <div class="donation-info">
-      <h3>Our Research and Projects Include:</h3>
-      <ul>
-        <li>Advancing cryptocurrency security and blockchain technologies.</li>
-        <li>Supporting environmental sustainability through decentralized projects.</li>
-        <li>Research into Artificial Intelligence and machine learning applications for blockchain.</li>
-        <li>Educational outreach and community-building initiatives for blockchain adoption.</li>
-      </ul>
-    </div>
+<div class="investor-package">
+    <h3>Platinum Package - $250,000</h3>
+    <p>Receive a lifetime membership, private events, and first access to all future investments.</p>
+    <a href="https://nowpayments.io/payment/?iid=5479349893" class="investor-btn" target="_blank">Invest Now</a>
+</div>
 
-    <p>Your donation directly impacts these initiatives, providing us with the resources needed to innovate and push the boundaries of what's possible. Become part of this exciting journey by contributing today!</p>
+<div class="investor-package">
+    <h3>Gold Package - $100,000</h3>
+    <p>Enjoy exclusive access to our network of experts and influencers. Join our prestigious community.</p>
+    <a href="https://nowpayments.io/payment/?iid=5874534132" class="investor-btn" target="_blank">Invest Now</a>
+</div>
 
-    <a href="https://nowpayments.io/payment/?iid=4743044058" class="donation-btn" target="_blank">Donate 5 Coins - Get Rewarded!</a>
-    <a href="https://nowpayments.io/payment/?iid=4684194348" class="donation-btn" target="_blank">Donate 10 Coins - Unlock Exclusive Content</a>
-    <a href="https://nowpayments.io/payment/?iid=5833507021" class="donation-btn" target="_blank">Donate 20 Coins - Access Premium Features</a>
-    <a href="https://nowpayments.io/payment/?iid=5833507021" class="donation-btn" target="_blank">Donate 50 Coins - Become a VIP Supporter</a>
-  </div>
+<div class="investor-package">
+    <h3>Silver Package - $25,000</h3>
+    <p>Join a select group of investors committed to global impact. Get access to quarterly updates.</p>
+    <a href="https://nowpayments.io/payment/?iid=5005394447" class="investor-btn" target="_blank">Invest Now</a>
+</div>
 
-  <div class="investor-section">
-    <h2>Investor Opportunities</h2>
-    <p>Minimum investment: $25,000. Become a part of the Elbanna.org legacy by investing in the future. Choose from the following packages:</p>
-
-    <div class="investor-package">
-      <h3>Bronze Package - $25,000</h3>
-      <p>Gain early access to premium features and a place in our exclusive investor group.</p>
-      <a href="https://nowpayments.io/payment/?iid=5874534132" class="investor-btn" target="_blank">Invest Now</a>
-    </div>
-
-    <div class="investor-package">
-      <h3>Silver Package - $50,000</h3>
-      <p>Get all the benefits of the Bronze package, plus VIP support and behind-the-scenes access.</p>
-      <a href="https://nowpayments.io/payment/?iid=5479349893" class="investor-btn" target="_blank">Invest Now</a>
-    </div>
-
-    <div class="investor-package">
-      <h3>Gold Package - $100,000</h3>
-      <p>Unlock all benefits, including a personal consultation with the team and priority access to new initiatives.</p>
-      <a href="https://nowpayments.io/payment/?iid=5005394447" class="investor-btn" target="_blank">Invest Now</a>
-      </div>
-
-    <div class="investor-package">
-      <h3>Platinum Package - $250,000</h3>
-      <p>Receive a lifetime membership, private events, and first access to all future investments.</p>
-      <a href="https://nowpayments.io/payment/?iid=5479349893" class="investor-btn" target="_blank">Invest Now</a>
-    </div>
-  </div>
-
-  <footer>
+<footer>
     <p>© 2024 Elbanna.org - Web design by <a href="https://elbanna.org" target="_blank">Elbanna.org</a>. All rights reserved.</p>
     <p>@ Be Your Own Hero 2024. Wallets are available here <a href="https://raptoreum.com/downloads/" target="_blank">https://raptoreum.com/downloads/</a>.</p>
-  </footer>
+</footer>
 
 </body>
 </html>
