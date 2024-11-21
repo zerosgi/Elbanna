@@ -1,144 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join Elbanna.org's Global Rescue Team – Masters of Their Craft.">
-    <title>Elbanna.org - Global Rescue Team</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        header {
-            padding: 20px;
-            background-color: #2e2e2e;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-            color: #00b5e2; /* GoPro-like blue */
-        }
-
-        .video-container {
-            margin: 20px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        iframe {
-            width: 80%;
-            height: 315px;
-            border: none;
-        }
-
-        .donation-container {
-            margin: 40px auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            width: 90%;
-            max-width: 600px;
-        }
-
-        .donation-container h2 {
-            margin-bottom: 20px;
-            color: #00b5e2;
-        }
-
-        .package {
-            margin: 20px 0;
-        }
-
-        .package button {
-            padding: 15px 30px;
-            background-color: #00b5e2; /* GoPro-like blue */
-            color: black;
-            font-size: 1rem;
-            font-weight: bold;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .package button:hover {
-            background-color: #f2f2f2;
-            color: #00b5e2;
-        }
-
-        .package p {
-            margin-top: 10px;
-            font-size: 1.1rem;
-            color: #e0e0e0;
-        }
-
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #2e2e2e;
-            color: lightgray;
-        }
-
-        footer a {
-            color: #00b5e2;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEC Filing - Elbanna.org</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #222;
+      font-size: 2.5em;
+    }
+    .cta-btn {
+      background-color: royalblue;
+      color: white;
+      font-size: 18px;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 30px;
+    }
+    .cta-btn:hover {
+      background-color: gold;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #333;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .donation-section {
+      background-color: #222;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .donation-btn {
+      background-color: royalblue;
+      color: white;
+      font-size: 18px;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+    .donation-btn:hover {
+      background-color: gold;
+    }
+    .video-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .investor-section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #222;
+      margin-top: 40px;
+    }
+    .investor-package {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      width: 250px;
+    }
+    .investor-package h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+    .investor-package p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .investor-btn {
+      background-color: royalblue;
+      color: white;
+      font-size: 18px;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .investor-btn:hover {
+      background-color: gold;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Elbanna.org - Global Rescue Team</h1>
-    </header>
 
-    <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/C8dmpfUmN9c?autoplay=1&mute=0&loop=1&playlist=C8dmpfUmN9c&controls=0&volume=0.3" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-        </iframe>
+  <header>
+    Elbanna.org - SEC Filing Transparency
+  </header>
+
+  <div class="section">
+    <h2>Explore Our Official SEC Filing</h2>
+    <p>For full transparency, you can view our official SEC filing. Click the button below to access it directly.</p>
+    <a href="https://www.sec.gov/Archives/edgar/data/1827189/000182718920000001/xslFormDX01/primary_doc.xml" class="cta-btn" target="_blank">View SEC Filing</a>
+  </div>
+
+  <div class="video-container">
+    <h3>Watch Our Introduction Video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/C8dmpfUmN9c?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="donation-section">
+    <h2>Support Us Through Donations</h2>
+    <p>Throw your coins into the wishing well and help us grow our mission. Your support makes a real difference.</p>
+    <a href="https://nowpayments.io/payment/?iid=4743044058" class="donation-btn" target="_blank">Donate 5 Coins - Get Rewarded!</a>
+    <a href="https://nowpayments.io/payment/?iid=4684194348" class="donation-btn" target="_blank">Donate 10 Coins - Unlock Exclusive Content</a>
+    <a href="https://nowpayments.io/payment/?iid=5833507021" class="donation-btn" target="_blank">Donate 20 Coins - Access Premium Features</a>
+    <a href="https://nowpayments.io/payment/?iid=5833507021" class="donation-btn" target="_blank">Donate 50 Coins - Become a VIP Supporter</a>
+  </div>
+
+  <div class="investor-section">
+    <h2>Investor Opportunities</h2>
+    <p>Minimum investment: $25,000. Become a part of the Elbanna.org legacy by investing in the future. Choose from the following packages:</p>
+
+    <div class="investor-package">
+      <h3>Bronze Package - $25,000</h3>
+      <p>Gain early access to premium features and a place in our exclusive investor group.</p>
+      <a href="#" class="investor-btn">Invest Now</a> <!-- Replace with actual link -->
     </div>
 
-    <div class="donation-container">
-        <h2>Throw Your Coins in the Wishing Well</h2>
-        <p>Make a difference with your donations. Choose a package and get rewarded for your generosity:</p>
-
-        <!-- Package 1 -->
-        <div class="package">
-            <button onclick="window.open('https://nowpayments.io/donation/ICRT?amount=5', '_blank')">Donate 5 Coins</button>
-            <p>Get a personalized thank-you email and recognition on our website.</p>
-        </div>
-
-        <!-- Package 2 -->
-        <div class="package">
-            <button onclick="window.open('https://nowpayments.io/donation/ICRT?amount=20', '_blank')">Donate 20 Coins</button>
-            <p>Receive a certificate of appreciation and a custom digital badge for your support.</p>
-        </div>
-
-        <!-- Package 3 -->
-        <div class="package">
-            <button onclick="window.open('https://nowpayments.io/donation/ICRT?amount=50', '_blank')">Donate 50 Coins</button>
-            <p>Get a limited-edition supporter badge and access to exclusive updates.</p>
-        </div>
-
-        <!-- Package 4 -->
-        <div class="package">
-            <button onclick="window.open('https://nowpayments.io/donation/ICRT?amount=100', '_blank')">Donate 100 Coins</button>
-            <p>Join the Global Rescue Team as an honorary member and receive a personal thank-you video.</p>
-        </div>
+    <div class="investor-package">
+      <h3>Silver Package - $50,000</h3>
+      <p>Get all the benefits of the Bronze package, plus VIP support and behind-the-scenes access.</p>
+      <a href="#" class="investor-btn">Invest Now</a> <!-- Replace with actual link -->
     </div>
 
-    <footer>
-        <p>&copy; 2024 Elbanna.org - Masters of Their Craft. <a href="https://www.elbanna.org">Contact Us</a></p>
-    </footer>
+    <div class="investor-package">
+      <h3>Gold Package - $100,000</h3>
+      <p>Unlock all benefits, including a personal consultation with the team and priority access to new initiatives.</p>
+      <a href="#" class="investor-btn">Invest Now</a> <!-- Replace with actual link -->
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact us at info@elbanna.org | © 2024 Elbanna.org</p>
+  </footer>
+
 </body>
 </html>
