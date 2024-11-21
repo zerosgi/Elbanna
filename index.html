@@ -11,9 +11,9 @@
             background: url('https://github.com/zerosgi/Elbanna/blob/main/file-Tmdjz9GN8DseN7HoWlAo93mn.webp') no-repeat center center fixed;
             background-size: cover;
             background-blend-mode: multiply;
-            background-color: rgba(50, 25, 0, 0.85); /* Sepia overlay */
-            color: #f5deb3; /* Warm parchment tone */
-            font-family: 'Crimson Pro', serif; /* Classical font style */
+            background-color: rgba(0, 0, 0, 0.85); /* Black overlay */
+            color: white;
+            font-family: 'Crimson Pro', serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -25,21 +25,37 @@
 
         header {
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         header h1 {
-            font-size: 4rem;
+            font-size: 5rem; /* Increased size */
             font-weight: bold;
-            color: #e5c07b; /* Golden parchment */
+            color: white;
             margin: 0;
             letter-spacing: 2px;
             text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 span:first-child {
+            color: royalblue; /* Royal Blue for Elbanna */
+        }
+
+        header h1 span:last-child {
+            color: #FFD700; /* Solid Gold for .org */
+            margin-left: 10px;
         }
 
         header h2 {
             font-size: 1.8rem;
             font-weight: 600;
-            color: #deb887; /* Soft bronze */
+            color: #ccc; /* Light gray */
             margin-top: 5px;
             letter-spacing: 1px;
         }
@@ -63,9 +79,9 @@
             padding: 10px 25px;
             font-size: 1.2rem;
             font-weight: bold;
-            color: #f5deb3;
-            background-color: #6c4c1b; /* Antique gold */
-            border: 2px solid #e5c07b; /* Gold border */
+            color: white;
+            background-color: black;
+            border: 2px solid #fff;
             border-radius: 4px;
             text-decoration: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Gentle shadow */
@@ -73,8 +89,8 @@
         }
 
         .donation-button:hover {
-            background-color: #e5c07b; /* Bright gold */
-            color: #4b2b00; /* Dark sepia */
+            background-color: #fff;
+            color: black;
             transform: scale(1.05);
         }
 
@@ -93,15 +109,15 @@
             padding: 10px;
             margin-bottom: 15px;
             background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #deb887; /* Bronze border */
+            border: 1px solid #ccc; /* Light gray border */
             border-radius: 4px;
             color: #333;
         }
 
         .contact-form button {
             padding: 10px 20px;
-            background-color: #6c4c1b;
-            color: #f5deb3;
+            background-color: #333;
+            color: white;
             border: none;
             border-radius: 4px;
             font-size: 1.2rem;
@@ -110,24 +126,25 @@
         }
 
         .contact-form button:hover {
-            background-color: #e5c07b;
+            background-color: #fff;
+            color: black;
         }
 
         footer {
-            background-color: rgba(50, 25, 0, 0.9);
-            color: #f5deb3;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
             text-align: center;
             padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
-            border-top: 1px solid #deb887; /* Bronze border */
+            border-top: 1px solid #ccc; /* Light gray border */
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 3rem;
+                font-size: 4rem; /* Reduced size for smaller screens */
             }
 
             header h2 {
@@ -163,7 +180,7 @@
 </head>
 <body>
     <header>
-        <h1>Elbanna.org</h1>
+        <h1><span>Elbanna</span><span>.org</span></h1> <!-- Royal Blue for Elbanna and Solid Gold for .org -->
         <h2>Local Tampa Non-Profit Organization</h2>
     </header>
 
@@ -172,7 +189,7 @@
     </div>
 
     <!-- Donation Button -->
-    <a href="https://nowpayments.io/payment/?iid=4684194348" class="donation-button">Donate to Crisis Relief</a>
+    <a href="https://nowpayments.io/payment/?iid=5833507021" class="donation-button">Donate to Crisis Relief</a>
 
     <!-- Contact Form Section -->
     <div class="contact-form">
