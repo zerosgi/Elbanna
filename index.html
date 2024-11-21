@@ -3,207 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elbanna.org - Local Tampa Non Profit Organization</title>
+    <title>Elbanna.org - Global Rescue Team</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap');
-
+        /* Base Styles */
         body {
-            background: url('https://github.com/zerosgi/Elbanna/blob/main/file-Tmdjz9GN8DseN7HoWlAo93mn.webp') no-repeat center center fixed;
-            background-size: cover;
-            background-blend-mode: multiply;
-            background-color: rgba(0, 0, 0, 0.85); /* Black overlay */
-            color: white;
-            font-family: 'Crimson Pro', serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background-color: black;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            text-align: center;
+            padding: 20px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Hero Section */
+        .hero {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            height: 100vh;
+            background: url('https://github.com/zerosgi/Elbanna/blob/main/file-Tmdjz9GN8DseN7HoWlAo93mn.webp') no-repeat center center / cover;
+            position: relative;
         }
 
-        header {
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
         }
 
-        header h1 {
-            font-size: 5rem; /* Increased size */
-            font-weight: bold;
-            color: white;
-            margin: 0;
-            letter-spacing: 2px;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .hero h1 {
+            font-size: 3rem;
+            color: royalblue;
+            z-index: 1;
         }
 
-        header h1 span:first-child {
-            color: royalblue; /* Royal Blue for Elbanna */
-        }
-
-        header h1 span:last-child {
-            color: #FFD700; /* Solid Gold for .org */
-            margin-left: 10px;
-        }
-
-        header h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #ccc; /* Light gray */
-            margin-top: 5px;
-            letter-spacing: 1px;
-        }
-
-        .message {
+        .hero h2 {
             font-size: 1.5rem;
+            color: gold;
+            margin-top: 10px;
+            z-index: 1;
+        }
+
+        .hero a {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: royalblue;
+            color: white;
             font-weight: bold;
-            color: #ff6347; /* Tomato red */
-            margin-top: 40px;
-            max-width: 800px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: 2px solid gold;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .hero a:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        /* Mission Section */
+        .mission {
+            padding: 50px 20px;
             text-align: center;
+            background-color: #121212;
+        }
+
+        .mission h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: royalblue;
+        }
+
+        .mission p {
+            font-size: 1.2rem;
             line-height: 1.6;
         }
 
-        .donation-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 10px 25px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: white;
-            background-color: black;
-            border: 2px solid #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Gentle shadow */
-            transition: transform 0.2s, background-color 0.2s;
-        }
-
-        .donation-button:hover {
-            background-color: #fff;
-            color: black;
-            transform: scale(1.05);
-        }
-
-        /* Contact Form */
-        .contact-form {
-            margin-top: 40px;
-            max-width: 600px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ccc; /* Light gray border */
-            border-radius: 4px;
-            color: #333;
-        }
-
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .contact-form button:hover {
-            background-color: #fff;
-            color: black;
-        }
-
+        /* Footer */
         footer {
-            background-color: rgba(0, 0, 0, 0.9);
-            color: white;
+            background-color: #111;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            border-top: 1px solid #ccc; /* Light gray border */
+            padding: 20px;
+            color: white;
         }
 
-        /* Responsive Design */
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: royalblue;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 4rem; /* Reduced size for smaller screens */
+            .hero h1 {
+                font-size: 2rem;
             }
 
-            header h2 {
-                font-size: 1.6rem;
-            }
-
-            .message {
-                font-size: 1.2rem;
-                max-width: 100%;
-            }
-
-            .donation-button {
+            .hero h2 {
                 font-size: 1rem;
-                padding: 8px 20px;
             }
 
-            .contact-form {
-                width: 90%;
-                padding: 15px;
-            }
-
-            .contact-form input,
-            .contact-form textarea {
-                padding: 8px;
-            }
-
-            .contact-form button {
+            .hero a {
                 font-size: 1rem;
-                padding: 8px 18px;
+            }
+
+            .mission h3 {
+                font-size: 1.5rem;
+            }
+
+            .mission p {
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><span>Elbanna</span><span>.org</span></h1> <!-- Royal Blue for Elbanna and Solid Gold for .org -->
-        <h2>Local Tampa Non-Profit Organization</h2>
+        <img src="https://www.elbanna.org/images/logo.png" alt="Elbanna.org Logo">
     </header>
 
-    <div class="message">
-        <p><strong>Something needs to be done, someone must do it. We need real money for real results. We need a power hitter. Donors, thank you for your donations, your place will be marked in history. Let's do this!</strong></p>
-    </div>
+    <section class="hero">
+        <h1>Elbanna.org</h1>
+        <h2>A Global Rescue Team</h2>
+        <a href="https://nowpayments.io/payment/?iid=5833507021">Donate Now</a>
+    </section>
 
-    <!-- Donation Button -->
-    <a href="https://nowpayments.io/payment/?iid=5833507021" class="donation-button">Donate to Crisis Relief</a>
-
-    <!-- Contact Form Section -->
-    <div class="contact-form">
-        <h3>Contact Us</h3>
-        <form action="mailto:alex@elbanna.org" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+    <section class="mission">
+        <h3>Our Mission</h3>
+        <p>
+            At Elbanna.org, we unite the world's best-qualified people—experts in their field and masters of their craft.  
+            Together, we tackle global challenges with precision, determination, and unmatched expertise.  
+            Join us in making a real difference where it matters most.
+        </p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Elbanna.org | Web design by Elbanna.org</p>
+        <p>&copy; 2024 Elbanna.org. All rights reserved.  
+            <a href="mailto:contact@elbanna.org">Contact Us</a>
+        </p>
     </footer>
 </body>
 </html>
