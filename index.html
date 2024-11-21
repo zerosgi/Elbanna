@@ -14,9 +14,19 @@
     }
     header {
       text-align: center;
-      padding: 50px 20px;
+      padding: 30px 20px;
       background-color: #222;
       font-size: 2.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: gold;
+    }
+    .logo {
+      color: royalblue;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-transform: uppercase;
     }
     .cta-btn {
       background-color: royalblue;
@@ -109,12 +119,33 @@
     .investor-btn:hover {
       background-color: gold;
     }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.8em;
+      }
+      iframe {
+        height: 300px;
+      }
+      .investor-package {
+        width: 100%;
+      }
+      .cta-btn {
+        font-size: 16px;
+        padding: 10px 25px;
+      }
+      .donation-btn {
+        font-size: 16px;
+        padding: 10px 25px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    Elbanna.org - SEC Filing Transparency
+    <div class="logo">Elbanna.org</div>
   </header>
 
   <div class="section">
@@ -144,19 +175,19 @@
     <div class="investor-package">
       <h3>Bronze Package - $25,000</h3>
       <p>Gain early access to premium features and a place in our exclusive investor group.</p>
-      <a href="#" class="investor-btn">Invest Now</a> <!-- Replace with actual link -->
+      <a href="https://nowpayments.io/payment/?iid=5874534132" class="investor-btn" target="_blank">Invest Now</a>
     </div>
 
     <div class="investor-package">
       <h3>Silver Package - $50,000</h3>
       <p>Get all the benefits of the Bronze package, plus VIP support and behind-the-scenes access.</p>
-      <a href="#" class="investor-btn">Invest Now</a> <!-- Replace with actual link -->
+      <a href="https://nowpayments.io/payment/?iid=5479349893" class="investor-btn" target="_blank">Invest Now</a>
     </div>
 
     <div class="investor-package">
       <h3>Gold Package - $100,000</h3>
       <p>Unlock all benefits, including a personal consultation with the team and priority access to new initiatives.</p>
-      <a href="#" class="investor-btn">Invest Now</a> <!-- Replace with actual link -->
+      <a href="https://nowpayments.io/payment/?iid=5005394447" class="investor-btn" target="_blank">Invest Now</a>
     </div>
   </div>
 
