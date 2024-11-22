@@ -4,126 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore current investment opportunities with QI Corp through Elbanna.org.">
-    <title>Elbanna.org - Current Opportunities</title>
+    <meta name="keywords" content="Elbanna.org, QI Corp, investment opportunities, blockchain, equity shares, nonprofit, innovation">
+    <meta name="author" content="Alex Elbanna">
+    <title>Elbanna.org | Current Opportunities</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f5f5f5;
+            color: #333;
         }
 
         header {
-            text-align: center;
+            background-color: #007BFF;
+            color: white;
             padding: 20px;
-            background-color: #222;
-            color: #fff;
+            text-align: center;
         }
 
-        .section {
+        .container {
             max-width: 1200px;
-            margin: 40px auto;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        h1, h2 {
+            color: #007BFF;
+        }
+
+        .opportunity {
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
 
-        .section h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .card {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .card img {
-            flex: 1;
+        .opportunity img {
             max-width: 100%;
-            object-fit: cover;
+            border-radius: 8px;
         }
 
-        .card-content {
-            flex: 2;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card-content h2 {
-            color: #333;
-            margin: 0 0 10px;
-        }
-
-        .card-content p {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .cta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .cta .invest-btn {
+        .opportunity button {
             background-color: #28a745;
-            color: #fff;
-            padding: 12px 20px;
+            color: white;
             border: none;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
             cursor: pointer;
+            margin-top: 15px;
         }
 
-        .cta .invest-btn:hover {
+        .opportunity button:hover {
             background-color: #218838;
         }
 
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 8px;
+        }
+
         footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: #222;
-            color: #fff;
-            margin-top: 40px;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Elbanna.org</h1>
-        <p>Innovative Opportunities Await</p>
+        <p>Empowering Innovation through Nonprofit and Blockchain Solutions</p>
     </header>
 
-    <div class="section">
-        <h1>Current Opportunities</h1>
-        <div class="card">
-            <img src="placeholder.jpg" alt="QI Corp Project Image">
-            <div class="card-content">
-                <h2>QI Corp</h2>
-                <p>
-                    By investing in QI Corp, you secure equity in an innovative company revolutionizing web development 
-                    and blockchain solutions. Your 2,500-share investment directly supports our mission while offering 
-                    exclusive benefits like ownership, dividends, and long-term growth potential.
-                </p>
-                <div class="cta">
-                    <a href="https://nowpayments.io/payment/?iid=5321487017" class="invest-btn">Invest Now</a>
-                </div>
+    <div class="container">
+        <section class="opportunity">
+            <h2>Current Opportunity: QI Corp</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/C8dmpfUmN9c?autoplay=1&mute=0&rel=0" allow="autoplay; encrypted-media"></iframe>
             </div>
-        </div>
+            <p>
+                By investing in QI Corp, you gain equity in an innovative company driving blockchain and web development. 
+                Your $25,000 minimum investment secures 2,500 shares, offering ownership, potential dividends, and 
+                influence on decisions.
+            </p>
+            <button onclick="window.location.href='https://nowpayments.io/payment/?iid=5321487017'">
+                Invest Now
+            </button>
+        </section>
+
+        <section class="opportunity">
+            <h2>Coming Soon</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/hXI2cqqD6q0?autoplay=1&mute=1&rel=0" allow="autoplay; encrypted-media"></iframe>
+            </div>
+            <p>
+                Stay tuned for our upcoming projects and opportunities to invest in groundbreaking solutions.
+            </p>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Elbanna.org. All Rights Reserved.</p>
+        &copy; 2024 Elbanna.org | All Rights Reserved
     </footer>
 </body>
 </html>
