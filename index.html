@@ -3,116 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore current investment opportunities with QI Corp through Elbanna.org.">
-    <meta name="keywords" content="Elbanna.org, QI Corp, investment opportunities, blockchain, equity shares, nonprofit, innovation">
-    <meta name="author" content="Alex Elbanna">
-    <title>Elbanna.org | Current Opportunities</title>
+    <meta name="description" content="Elbanna.org: Your source for innovative opportunities.">
+    <title>Elbanna.org</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f9f9f9;
             color: #333;
         }
 
         header {
-            background-color: #007BFF;
-            color: white;
+            background-color: #333;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 15px;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
 
-        h1, h2 {
-            color: #007BFF;
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
         }
 
-        .opportunity {
-            background-color: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-bottom: 20px;
+        #current-opportunities {
+            text-align: center;
             padding: 20px;
         }
 
-        .opportunity img {
-            max-width: 100%;
-            border-radius: 8px;
+        #current-opportunities h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
-        .opportunity button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 15px;
+        #opportunity1, #opportunity2 {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
         }
 
-        .opportunity button:hover {
-            background-color: #218838;
+        #opportunity1 h3, #opportunity2 h3 {
+            color: #5aa63c;
         }
 
-        .video-container iframe {
+        #opportunity2 h3 {
+            color: #888;
+        }
+
+        iframe {
             width: 100%;
+            max-width: 560px;
             height: 315px;
             border: none;
-            border-radius: 8px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #5aa63c;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
         }
 
         footer {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 10px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 210px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Elbanna.org</h1>
-        <p>Empowering Innovation through Nonprofit and Blockchain Solutions</p>
+        <h1>Welcome to Elbanna.org</h1>
+        <p>Your gateway to exciting opportunities.</p>
     </header>
 
-    <div class="container">
-        <section class="opportunity">
-            <h2>Current Opportunity: QI Corp</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/C8dmpfUmN9c?autoplay=1&mute=0&rel=0" allow="autoplay; encrypted-media"></iframe>
-            </div>
-            <p>
-                By investing in QI Corp, you gain equity in an innovative company driving blockchain and web development. 
-                Your $25,000 minimum investment secures 2,500 shares, offering ownership, potential dividends, and 
-                influence on decisions.
-            </p>
-            <button onclick="window.location.href='https://nowpayments.io/payment/?iid=5321487017'">
-                Invest Now
-            </button>
-        </section>
+    <!-- Current Opportunities Section -->
+    <section id="current-opportunities">
+        <h2>Current Opportunities</h2>
+        
+        <!-- First Opportunity -->
+        <div id="opportunity1">
+            <h3>Invest in QI Corp</h3>
+            <p>Your chance to invest in the future of blockchain and web development.</p>
+            <iframe 
+                src="https://www.youtube.com/embed/C8dmpfUmN9c?autoplay=1&mute=0" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <p>Learn more about the investment and view our official SEC filing <a href="https://www.sec.gov/Archives/edgar/data/1827189/000182718920000001/xslFormDX01/primary_doc.xml" target="_blank">here</a>.</p>
+            <a href="https://nowpayments.io/payment/?iid=5321487017">Invest Now</a>
+        </div>
+        
+        <!-- Second Opportunity -->
+        <div id="opportunity2">
+            <h3>Coming Soon</h3>
+            <p>Stay tuned for our next exciting investment opportunity!</p>
+            <iframe 
+                src="https://www.youtube.com/embed/hXI2cqqD6q0" 
+                title="YouTube video player" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
 
-        <section class="opportunity">
-            <h2>Coming Soon</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/hXI2cqqD6q0?autoplay=1&mute=1&rel=0" allow="autoplay; encrypted-media"></iframe>
-            </div>
-            <p>
-                Stay tuned for our upcoming projects and opportunities to invest in groundbreaking solutions.
-            </p>
-        </section>
-    </div>
-
+    <!-- Footer Section -->
     <footer>
-        &copy; 2024 Elbanna.org | All Rights Reserved
+        <p>&copy; 2024 Elbanna.org | All Rights Reserved</p>
     </footer>
 </body>
 </html>
